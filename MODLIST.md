@@ -1,4 +1,4 @@
-## Brume
+## Luminous
 
 - [SpartanShields-1.16.5-2.1.2.jar](https://www.curseforge.com/minecraft/mc-mods/spartan-shields/files/3292950) (by [ObliviousSpartan](https://www.curseforge.com/members/ObliviousSpartan/projects))
 - [swingthroughgrass-1.16.4-1.5.3.jar](https://www.curseforge.com/minecraft/mc-mods/swingthroughgrass/files/3103028) (by [exidex](https://www.curseforge.com/members/exidex/projects))
