@@ -25,7 +25,7 @@ jobs:
               cat output | jq ".data.authors [0].name" | sed 's/\"//g' >> authors
               cat output | jq ".data.links.websiteUrl" | head -n 30 | sed 's/\"//g' >> mods_link
           done < ids
-          echo -e "## Brume\n" >> MODLIST.md
+          echo -e "## ${{github.event.repository.name}}\n" >> MODLIST.md
           paste mods_name mods_link files_id authors | while read mod_name mod_link file_id author; do
               echo "- [$mod_name]($mod_link/files/$file_id) (by [$author](https://www.curseforge.com/members/$author/projects))" >> MODLIST.md
           done
