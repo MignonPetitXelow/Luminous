@@ -26,5 +26,6 @@ servers.dat*
 replay*
 !config/twilightforest-common.toml
 !config/simple-rpc.toml
+!config/biomesoplenty
 reauth.toml
 simple-rpc/server-entries.toml
