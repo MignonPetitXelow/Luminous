@@ -27,6 +27,7 @@ replay*
 !config/twilightforest-common.toml
 !config/simple-rpc.toml
 !config/biomesoplenty
+!config/ftbquests
 reauth.toml
 simple-rpc/server-entries.toml
 logo.png

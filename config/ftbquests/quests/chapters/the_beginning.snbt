@@ -1,0 +1,171 @@
+{
+	id: "139D547FB4AA80D9"
+	group: ""
+	order_index: 0
+	filename: "the_beginning"
+	title: "The Beginning "
+	icon: {
+		id: "mana-and-artifice:manaweaver_wand"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Welcome to Luminous!"
+			x: 0.0d
+			y: 0.0d
+			shape: "rsquare"
+			hide: false
+			id: "4C77862F6F8EA493"
+			tasks: [{
+				id: "272BA709FF7A4735"
+				type: "dimension"
+				dimension: "minecraft:overworld"
+			}]
+			rewards: [
+				{
+					id: "0694A7F88F6C69DE"
+					type: "item"
+					auto: "invisible"
+					item: {
+						id: "projecte:watch_of_flowing_time"
+						Count: 1b
+						tag: { }
+						ForgeCaps: {
+							Parent: { }
+						}
+					}
+				}
+				{
+					id: "430E989344860068"
+					type: "item"
+					auto: "invisible"
+					item: "minecraft:cooked_salmon"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "What a great start.."
+			icon: "minecraft:cobblestone"
+			x: 0.0d
+			y: 1.0d
+			description: ["Break the leaves to get sticks, or just use a knife to get sticks easier (but you need sticks), also for cobblestones you can break small stones you find in the world"]
+			dependencies: ["4C77862F6F8EA493"]
+			hide: false
+			id: "14E4B51B5ABD6408"
+			tasks: [
+				{
+					id: "46D9D1DFDE1EE4C9"
+					type: "item"
+					item: "minecraft:stick"
+				}
+				{
+					id: "2861778C50AD06AD"
+					type: "item"
+					item: "minecraft:crafting_table"
+				}
+				{
+					id: "1D303E865E237FD2"
+					type: "item"
+					item: "minecraft:cobblestone"
+				}
+				{
+					id: "340BEEC541B59735"
+					type: "item"
+					item: {
+						id: "aquaculture:stone_fillet_knife"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "7AB75024523DF010"
+					type: "item"
+					item: "minecraft:cobblestone"
+					count: 4
+				}
+				{
+					id: "71A0BC6D6EC44AAF"
+					type: "item"
+					item: "minecraft:experience_bottle"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "Rocky rock"
+			icon: "betterdefaultbiomes:small_rock_cobble"
+			x: 0.0d
+			y: 2.0d
+			dependencies: ["14E4B51B5ABD6408"]
+			id: "46BE1B3F034ECD90"
+			tasks: [
+				{
+					id: "36601F3220992398"
+					type: "item"
+					item: {
+						id: "minecraft:stone_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6864214B700DCC35"
+					type: "item"
+					item: {
+						id: "minecraft:stone_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7B759B10C3E31EAD"
+					type: "item"
+					item: {
+						id: "minecraft:stone_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "17658EB8301D07E6"
+					type: "item"
+					item: {
+						id: "minecraft:stone_hoe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Do you love documentation?.. ❤"
+			x: 0.0d
+			y: 3.0d
+			dependencies: ["46BE1B3F034ECD90"]
+			id: "2A2C12406DE8773B"
+			tasks: [{
+				id: "3B3904D103AE2AE3"
+				type: "item"
+				item: "mana-and-artifice:guide_book"
+			}]
+		}
+	]
+}
