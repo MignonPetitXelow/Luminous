@@ -209,8 +209,8 @@
       "rarity": 0.75
     },
     "biomesoplenty:ominous_mire": {
-      "weight": 100,
-      "rarity": 0.75
+      "weight": 1000,
+      "rarity": 0.05
     },
     "biomesoplenty:rainforest_cliffs": {
       "weight": 100,

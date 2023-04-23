@@ -8,8 +8,21 @@ onEvent('recipes', event => {
 	  ], {
 		A: 'tconstruct:pattern',
 		B: '#forge:rods',
-		C: '#minecraft:planks',
+		C: '#minecraft:planks'
 	});
+
+	// Dont use before pre-release
+	/*event.shaped('tiab:timeinabottle', [
+		'ABA',
+		'CDC',
+		'EBE'
+	  ], {
+		A: 'mysticalagriculture:prudentium_ingot',
+		B: 'projecte:klein_star_sphere',
+		C: 'minecraft:gold_ingot',
+		D: 'projecte:watch_of_flowing_time',
+		E: 'mysticalagriculture:imperium_gemstone'
+	});*/
 
 	event.shapeless('4x minecraft:stick', ['#minecraft:planks', '#forge:fillet_knife']).keepIngredient('#forge:fillet_knife');
 });

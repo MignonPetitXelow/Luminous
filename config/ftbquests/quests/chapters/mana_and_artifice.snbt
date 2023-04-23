@@ -1,0 +1,195 @@
+{
+	id: "4D70961BB5E51D87"
+	group: "10EA5538C3879ED7"
+	order_index: 0
+	filename: "mana_and_artifice"
+	title: "Mana and Artifice"
+	icon: {
+		id: "mana-and-artifice:demon_armor_head"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "What is magic? ⭐"
+			x: 0.0d
+			y: 0.0d
+			shape: "rsquare"
+			id: "5506C313BFEF1B13"
+			tasks: [{
+				id: "0594E04C87601F09"
+				type: "gamestage"
+				icon: "mana-and-artifice:spell_book"
+				stage: "manaandartifice_1"
+			}]
+			rewards: [{
+				id: "21ABB5266A3021EE"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			dependencies: ["5506C313BFEF1B13"]
+			id: "54B4DF68C9BBB89D"
+			tasks: [{
+				id: "42ECF69D50E1DF22"
+				type: "item"
+				item: "mana-and-artifice:occulus"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			dependencies: ["54B4DF68C9BBB89D"]
+			dependency_requirement: "one_completed"
+			id: "68E8BD2539EBD9F0"
+			tasks: [{
+				id: "549DB6F482FA4D2A"
+				type: "item"
+				item: {
+					id: "mana-and-artifice:manaweaver_wand"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: 3.5d
+			shape: "octagon"
+			dependencies: ["68E8BD2539EBD9F0"]
+			id: "221C8D16591564B3"
+			tasks: [{
+				id: "105450BE8D090CAC"
+				type: "item"
+				item: "mana-and-artifice:manaweaver_wand_advanced"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 3.5d
+			shape: "octagon"
+			dependencies: ["68E8BD2539EBD9F0"]
+			id: "1056E02664515F7B"
+			tasks: [{
+				id: "4C57AF3933F5F081"
+				type: "item"
+				item: {
+					id: "mana-and-artifice:improvised_manaweaver_wand"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.5d
+			dependencies: [
+				"221C8D16591564B3"
+				"1056E02664515F7B"
+				"68E8BD2539EBD9F0"
+			]
+			dependency_requirement: "one_completed"
+			id: "45CCF8FDF5C5ABA1"
+			tasks: [{
+				id: "51CB23F26BF2D18A"
+				type: "item"
+				item: "mana-and-artifice:manaweaving_altar"
+			}]
+		}
+		{
+			icon: "mana-and-artifice:runescribing_table"
+			x: 0.0d
+			y: 6.0d
+			dependencies: ["45CCF8FDF5C5ABA1"]
+			hide_text_until_complete: true
+			id: "5A5C088F969A0709"
+			tasks: [
+				{
+					id: "49496489C0543ACE"
+					type: "item"
+					item: "mana-and-artifice:runescribing_table"
+				}
+				{
+					id: "657913863D27F1C2"
+					type: "item"
+					item: {
+						id: "mana-and-artifice:runesmith_hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6D6750AAB051C8DE"
+					type: "item"
+					item: {
+						id: "mana-and-artifice:runesmith_chisel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4565FD467F69A129"
+					type: "item"
+					item: "mana-and-artifice:rune_pattern"
+				}
+				{
+					id: "0897283C0B8EBC81"
+					type: "item"
+					item: "mana-and-artifice:runic_anvil"
+				}
+			]
+			rewards: [{
+				id: "7E33CADA45CCE4AF"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 1.5d
+			y: 6.0d
+			dependencies: ["5A5C088F969A0709"]
+			id: "0926B01066B88829"
+			tasks: [{
+				id: "46A918A2947DD3D8"
+				type: "item"
+				item: "mana-and-artifice:rune_pattern_defense"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 6.0d
+			dependencies: ["5A5C088F969A0709"]
+			id: "2EEDE8CCD24F15FB"
+			tasks: [{
+				id: "14847AF701FFBB6F"
+				type: "item"
+				item: "mana-and-artifice:superheated_vinteum_ingot"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 7.0d
+			id: "2C4FA064EE4A7E5A"
+			tasks: [{
+				id: "0CD97EEA6849CAD9"
+				type: "item"
+				item: "mana-and-artifice:mundane_ring_pattern"
+			}]
+		}
+	]
+}
