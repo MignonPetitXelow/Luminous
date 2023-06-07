@@ -32,3 +32,5 @@ replay*
 reauth.toml
 simple-rpc/server-entries.toml
 logo.png
+!config/better_loading_screen
+!mods/luminous.jar
