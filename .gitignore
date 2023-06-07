@@ -25,12 +25,17 @@ shaderpacks/
 servers.dat*
 .replay*
 replay*
+reauth.toml
+
+# ALLOWED MODPACK CONTENTS
+
+!config/better_loading_screen
+!mods/luminous.jar
+!config/simple-rpc
+!config/akashictome-common.toml
 !config/twilightforest-common.toml
 !config/simple-rpc.toml
 !config/biomesoplenty
 !config/ftbquests
-reauth.toml
-simple-rpc/server-entries.toml
-logo.png
-!config/better_loading_screen
-!mods/luminous.jar
+!logo.png
+!config/bettercaves-1_16.toml
